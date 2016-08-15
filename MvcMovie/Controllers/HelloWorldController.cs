@@ -17,9 +17,9 @@ namespace MvcMovie.Controllers
         {
             return "this is my default action";
         }
-        public string Welcome()
+        public string Welcome(string name, int numTimes=1)
         {
-            return "this is my welcome action";
+            return HttpUtility.HtmlEncode("Hello " + name + ", number of times=" + numTimes);
         }
     }
 }

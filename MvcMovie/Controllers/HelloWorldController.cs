@@ -13,9 +13,9 @@ namespace MvcMovie.Controllers
         //{
         //    return View();
         //}
-        public string Index()
+        public ActionResult Index()
         {
-            return "this is my default action";
+            return View();
         }
         public string Welcome(string name, int ID=1)
         {
